@@ -12,11 +12,19 @@ from flask_caching import Cache
 from flask_wtf.csrf import CSRFProtect
 from speaklater import is_lazy_string
 from werkzeug.middleware.proxy_fix import ProxyFix
+from werkzeug.utils import secure_filename
 
 from udata import cors, entrypoints
 
 APP_NAME = __name__.split(".")[0]
 ROOT_DIR = abspath(join(dirname(__file__)))
+
+
+UPLOAD_FOLDER = '/path/to/the/uploads'
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 log = logging.getLogger(__name__)
 
@@ -44,6 +52,8 @@ class UDataApp(Flask):
         - raises 404 if not debug
         - handle static aliases
         """
+
+        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$SERVER STATIC FILE", filename)
         if not self.debug:
             self.logger.error("Static files are only served in debug")
             abort(404)
@@ -237,3 +247,18 @@ def register_features(app):
 
     for ep in entrypoints.get_enabled("udata.plugins", app).values():
         ep.init_app(app)
+
+def parse_uploaded_image(logo_field):
+    file: FileStorage = logo_field
+    if not file:
+        raise ValueError("No file provided")
+    if not file.filename.endswith(('.png', '.jpg', '.jpeg')):
+        raise ValueError("Unsupported file format")
+    
+    # Définir le chemin de sauvegarde
+    save_path = os.path.join('static/uploads', file.filename)
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+    # Sauvegarder le fichier
+    file.save(save_path)
+    return save_path
