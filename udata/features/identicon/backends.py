@@ -54,7 +54,6 @@ def get_provider():
     """Get the current provider from config"""
     name = get_config("provider")
     available = entrypoints.get_all("udata.avatars")
-    print(available)
     if name not in available:
         raise ValueError("Unknown avatar provider: {0}".format(name))
     return available[name]
