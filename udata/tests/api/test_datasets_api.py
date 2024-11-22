@@ -877,7 +877,7 @@ class DatasetAPITest(APITestCase):
         assert dataset.resources[0].schema["version"] == "2.2.0"
 
         resource_data["schema"] = {
-            "url": "https://schema.data.gouv.fr/schemas/etalab/schema-irve-statique/2.2.1/schema-statique.json"
+            "url": "https://schema.opendata.gouv.tg/schemas/etalab/schema-irve-statique/2.2.1/schema-statique.json"
         }
         data["resources"].append(resource_data)
         response = self.put(url_for("api.dataset", dataset=dataset), data)

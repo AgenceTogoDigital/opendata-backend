@@ -254,7 +254,7 @@ class DcatBackendTest:
         # Schema with wrong version are considered as external. Maybe we could change this in the future
         assert (
             resources_by_title["Resource 1-2"].schema.url
-            == "https://schema.data.gouv.fr/schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json"
+            == "https://schema.opendata.gouv.tg/schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json"
         )
         assert resources_by_title["Resource 1-2"].schema.name is None
         assert resources_by_title["Resource 1-2"].schema.version is None
@@ -354,7 +354,7 @@ class DcatBackendTest:
         # Schema with wrong version are considered as external. Maybe we could change this in the future
         assert (
             resources_by_title["Resource 1-2"].schema.url
-            == "https://schema.data.gouv.fr/schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json"
+            == "https://schema.opendata.gouv.tg/schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json"
         )
         assert resources_by_title["Resource 1-2"].schema.name is None
         assert resources_by_title["Resource 1-2"].schema.version is None
@@ -918,7 +918,7 @@ class CswIso19139DcatBackendTest:
         # this is the string used in geo-ide for now
         lov1 = LicenseFactory(
             id="lov1",
-            url="http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+            url="http://www.opendata.gouv.tg/Licence-Ouverte-Open-Licence",
         )
 
         with open(os.path.join(CSW_DCAT_FILES_DIR, "XSLT.xml"), "rb") as f:

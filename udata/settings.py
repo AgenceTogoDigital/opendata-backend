@@ -14,10 +14,10 @@ class Defaults(object):
     LANGUAGES = {
         "en": "English",
         "fr": "Français",
-        "es": "Español",
-        "pt": "Português",
-        "sr": "Српски",
-        "de": "Deutsch",
+        # "es": "Español",
+        # "pt": "Português",
+        # "sr": "Српски",
+        # "de": "Deutsch",
     }
     DEFAULT_LANGUAGE = "en"
     SECRET_KEY = "Default uData secret key"
@@ -126,7 +126,7 @@ class Defaults(object):
     AUTO_INDEX = True
 
     SITE_ID = "default"
-    SITE_TITLE = "data.gouv.tg"
+    SITE_TITLE = "opendata.gouv.tg"
     SITE_KEYWORDS = ["opendata", "udata"]
     SITE_AUTHOR_URL = None
     SITE_AUTHOR = "Udata"
@@ -499,7 +499,7 @@ class Defaults(object):
     SCHEMA_CATALOG_URL = None
 
     API_DOC_EXTERNAL_LINK = (
-        "https://guides.data.gouv.fr/publier-des-donnees/guide-data.gouv.fr/api/reference"
+        "https://guides.opendata.gouv.tg/publier-des-donnees/guide-opendata.gouv.tg/api/reference"
     )
 
     # Read Only Mode

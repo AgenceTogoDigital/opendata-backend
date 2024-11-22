@@ -28,7 +28,7 @@ Here a list of known plugins for udata:
 - [`udata-recommendations`][udata-recommendations], a plugin to integrate a recommendation system
 - [`udata-tabular-preview`][udata-tabular-preview], a plugin to preview tabular files (CSV, Excel, ...) using [api-tabular][api-tabular]
 - [`udata-data-fair`][udata-data-fair], a plugin that use [DataFair][datafair] embeds to preview data
-- [`udata-transport`][udata-transport], a plugin to bind datasets to their counterparts on [transport.data.gouv.fr][transport.data.gouv.fr]
+- [`udata-transport`][udata-transport], a plugin to bind datasets to their counterparts on [transport.opendata.gouv.tg][transport.opendata.gouv.tg]
 
 
 !!! note
@@ -52,4 +52,4 @@ Here a list of known plugins for udata:
 [.stat]: https://siscc.org/stat-suite/
 [api-tabular]: https://github.com/datagouv/api-tabular
 [datafair]: https://data-fair.github.io/3/
-[transport.data.gouv.fr]: https://transport.data.gouv.fr/
+[transport.opendata.gouv.tg]: https://transport.opendata.gouv.tg/

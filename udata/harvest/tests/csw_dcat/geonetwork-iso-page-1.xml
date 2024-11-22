@@ -297,7 +297,7 @@ papier est aujourd'hui opposable, et consultable en mairie</gco:CharacterString>
 Mentionner le producteur des référentiels géographiques : ©IGN (BD Parcellaire®)</gco:CharacterString>
               </gmd:useLimitation>
               <gmd:useLimitation>
-                <gco:CharacterString>Licence Ouverte 1.0 http://www.data.gouv.fr/Licence-Ouverte-Open-Licence.</gco:CharacterString>
+                <gco:CharacterString>Licence Ouverte 1.0 http://www.opendata.gouv.tg/Licence-Ouverte-Open-Licence.</gco:CharacterString>
               </gmd:useLimitation>
               <gmd:useLimitation>
                 <gco:CharacterString>Aucun des articles de la loi ne peut être invoqué pour justifier d'une restriction d'accès public.</gco:CharacterString>
@@ -946,7 +946,7 @@ papier est aujourd'hui opposable, et consultable en mairie</gco:CharacterString>
           <gmd:resourceConstraints>
             <gmd:MD_LegalConstraints>
               <gmd:useLimitation>
-                <gco:CharacterString>Licence Ouverte 1.0 http://www.data.gouv.fr/Licence-Ouverte-Open-Licence.</gco:CharacterString>
+                <gco:CharacterString>Licence Ouverte 1.0 http://www.opendata.gouv.tg/Licence-Ouverte-Open-Licence.</gco:CharacterString>
               </gmd:useLimitation>
               <gmd:useLimitation>
                 <gco:CharacterString>Mentionner les noms des organismes fournisseurs de données : DDTM80 et d'indiquer la date de mise à jour des données

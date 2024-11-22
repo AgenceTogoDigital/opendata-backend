@@ -23,7 +23,7 @@ For a bug, please [report it directly as a Github issue][github-new-issue] follo
 
 For a contribution as an enthusiastic citizen, check out our [contributing guide](contributing-guide.md). It's good to have you on board!
 
-For any question, feel free to send an email to [data.gouv@data.gouv.fr](mailto:data.gouv@data.gouv.fr).
+For any question, feel free to send an email to [data.gouv@opendata.gouv.tg](mailto:data.gouv@opendata.gouv.tg).
 
 [github-new-issue]: https://github.com/opendatateam/udata/issues/new
 [github-discussions]: https://github.com/opendatateam/udata/discussions/2721

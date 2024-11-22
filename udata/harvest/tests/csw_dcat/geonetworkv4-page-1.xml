@@ -69,7 +69,7 @@
         <dct:publisher rdf:resource="http://localhost:8080/geonetwork/srv/resources/organizations/G%C3%A9o2France" />
         <dcat:granularity>1000</dcat:granularity>
         <dcat:distribution rdf:resource="https://dev.geo2france.fr/geonetwork/records/257f3fbc-d2b2-4dfd-9145-8b6899f6fb4b#OGC%3AWMS-accidento_hdf_L93" />
-        <dcat:dataQuality>Données issues de data.gouv.fr</dcat:dataQuality>
+        <dcat:dataQuality>Données issues de opendata.gouv.tg</dcat:dataQuality>
       </dcat:Dataset>
       <skos:Concept rdf:about="http://localhost:8080/geonetwork/srv/resources/registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/R%C3%A9seaux%20de%20transport">
         <skos:inScheme rdf:resource="http://localhost:8080/geonetwork/srv/resources/registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0" />

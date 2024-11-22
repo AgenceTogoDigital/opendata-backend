@@ -391,9 +391,9 @@ class LicenseModelTest:
         assert license.id == found.id
 
     def test_exact_match_by_url_in_string_real_world(self):
-        license = LicenseFactory(url="http://www.data.gouv.fr/Licence-Ouverte-Open-Licence")
+        license = LicenseFactory(url="http://www.opendata.gouv.tg/Licence-Ouverte-Open-Licence")
         found = License.guess(
-            "Licence Ouverte 1.0 http://www.data.gouv.fr/Licence-Ouverte-Open-Licence."
+            "Licence Ouverte 1.0 http://www.opendata.gouv.tg/Licence-Ouverte-Open-Licence."
         )
         assert isinstance(found, License)
         assert license.id == found.id

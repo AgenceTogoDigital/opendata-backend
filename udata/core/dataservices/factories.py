@@ -10,7 +10,7 @@ class HarvestMetadataFactory(ModelFactory):
         model = HarvestMetadata
 
     backend = "csw-dcat"
-    domain = "data.gouv.fr"
+    domain = "opendata.gouv.tg"
 
     source_id = factory.Faker("unique_string")
     source_url = factory.Faker("url")

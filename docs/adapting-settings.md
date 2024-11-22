@@ -131,7 +131,7 @@ NB: the content of the comment is located in `udata/templates/comments/dataset_a
 
 **default** : `None`
 
-The URL to a schema catalog, listing schemas resources can conform to. The URL should be a JSON endpoint, returning a schema catalog. Example: https://schema.data.gouv.fr/schemas/schemas.json
+The URL to a schema catalog, listing schemas resources can conform to. The URL should be a JSON endpoint, returning a schema catalog. Example: https://schema.opendata.gouv.tg/schemas/schemas.json
 
 NB: this is used by the `datasets/schemas` API to fill the `schema` field of a `Resource`.
 

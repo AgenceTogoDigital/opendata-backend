@@ -407,7 +407,7 @@ def spatial_from_rdf(graph):
     # The merging lose the properties and other information inside the GeoJSON…
     # Note that having multiple `Polygon` is not really the DCAT way of doing things, the standard require that you use
     # a `MultiPolygon` in this case. We support this right now, and wait and see if it raises problems in the future for
-    # people following the standard. (see https://github.com/datagouv/data.gouv.fr/issues/1362#issuecomment-2112774115)
+    # people following the standard. (see https://github.com/datagouv/opendata.gouv.tg/issues/1362#issuecomment-2112774115)
     polygons = []
     for geojson in geojsons:
         if geojson["type"] == "Polygon":
