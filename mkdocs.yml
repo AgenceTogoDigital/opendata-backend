@@ -1,6 +1,6 @@
 site_name: udata Documentation
 site_description: udata Open Data Portal Documentation
-site_author: opendata.gouv.tg
+site_author: opendata.gouv.tg 
 repo_url: https://github.com/opendatateam/udata
 
 theme:

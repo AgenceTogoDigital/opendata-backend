@@ -6,6 +6,9 @@ from datetime import datetime
 from glob import iglob
 from os.path import exists, join
 from sys import exit
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 from babel.messages.pofile import read_po, write_po
 from babel.util import LOCALTZ
@@ -18,6 +21,7 @@ I18N_DOMAIN = "udata"
 
 @task
 def clean(ctx, node=False, translations=False, all=False):
+    logging.error("============= cala cala ========== ")
     """Cleanup all build artifacts"""
     header("Clean all build artifacts")
     patterns = [
@@ -34,6 +38,7 @@ def clean(ctx, node=False, translations=False, all=False):
         patterns.append("node_modules")
     if translations or all:
         patterns.append("udata/translations/*/LC_MESSAGES/udata.mo")
+        logging.info("============= cala cala ========== ")
     for pattern in patterns:
         info(pattern)
     with ctx.cd(ROOT):
@@ -62,7 +67,7 @@ def update(ctx, migrate=False):
 def i18n(ctx, update=False):
     """Extract translatable strings"""
     header("Extract translatable strings")
-
+    logging.info("============= krkrkrk krkrkrkr ========== ")
     info("Extract Python strings")
     with ctx.cd(ROOT):
         ctx.run("python setup.py extract_messages")
@@ -115,7 +120,7 @@ def i18n(ctx, update=False):
                     keys.add(key)
                     if key not in catalog:
                         catalog[key] = key
-
+    logging.info("============= krkrkrk krkrkrkr ========== ")
     # Remove old/not found translations
     for key in list(catalog.keys()):
         if key not in keys:

@@ -29,7 +29,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/opendatateam/udata",
     author="Opendata Team",
-    author_email="opendatateam@opendata.gouv.tg",
+    author_email="opendatateam@opendata.gouv.tg ",
     packages=find_packages(),
     include_package_data=True,
     python_requires=">=3.8",

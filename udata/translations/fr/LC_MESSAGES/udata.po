@@ -1295,7 +1295,7 @@ msgid "This dataset has been archived by our administration team.\n\n"
 msgstr "Ce jeu de données a été archivé par notre équipe d'administration.\n\n"
 "Un jeu de données archivé est considéré comme obsolète selon une combinaison de facteurs.\n"
 "Il n'apparaît pas dans les résultats de recherche et une mise en page spéciale sur la page du jeu de données avertit les visiteurs.\n\n"
-"Si vous pensez que c'est une erreur, vous pouvez répondre à ce message ou nous écrire à validation@opendata.gouv.tg."
+"Si vous pensez que c'est une erreur, vous pouvez répondre à ce message ou nous écrire à validation@opendata.gouv.tg ."
 
 #: udata/templates/macros/metadata.html:3
 msgid "Share, improve and reuse public data"

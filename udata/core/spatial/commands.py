@@ -22,9 +22,9 @@ log = logging.getLogger(__name__)
 
 
 DEFAULT_GEOZONES_FILE = (
-    "https://www.opendata.gouv.tg/fr/datasets/r/a1bb263a-6cc7-4871-ab4f-2470235a67bf"
+    "https://www.opendata.gouv.tg /fr/datasets/r/a1bb263a-6cc7-4871-ab4f-2470235a67bf"
 )
-DEFAULT_LEVELS_FILE = "https://www.opendata.gouv.tg/fr/datasets/r/e0206442-78b3-4a00-b71c-c065d20561c8"
+DEFAULT_LEVELS_FILE = "https://www.opendata.gouv.tg /fr/datasets/r/e0206442-78b3-4a00-b71c-c065d20561c8"
 
 
 @cli.group("spatial")

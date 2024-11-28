@@ -27,6 +27,7 @@ from udata.errors import ConfigError
 from udata.utils import multi_to_dict
 
 
+
 def get_translation_directories_and_domains():
     translations_dir = []
     domains = []

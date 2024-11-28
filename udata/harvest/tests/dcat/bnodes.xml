@@ -150,7 +150,7 @@
     <dcterms:format>JSON</dcterms:format>
     <dcterms:title>Resource 1-2</dcterms:title>
     <dcat:accessURL>http://data.test.org/datasets/1/resources/2/file.json</dcat:accessURL>
-    <dct:conformsTo rdf:resource="https://schema.opendata.gouv.tg/schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json" />
+    <dct:conformsTo rdf:resource="https://schema.opendata.gouv.tg /schemas/etalab/schema-irve-statique/1337.42.0/schema-statique.json" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="http://data.test.org/datasets/2/resources/1">
     <dcat:accessURL>http://data.test.org/datasets/2/resources/1/file.json</dcat:accessURL>
@@ -164,7 +164,7 @@
     <dcterms:title>Resource 3-1</dcterms:title>
     <dcterms:description>A JSON resource</dcterms:description>
     <dcat:accessURL>http://data.test.org/datasets/3/resources/1/file.json</dcat:accessURL>
-    <dct:conformsTo rdf:resource="https://schema.opendata.gouv.tg/schemas/etalab/schema-irve-statique/2.2.0/schema-statique.json" />
+    <dct:conformsTo rdf:resource="https://schema.opendata.gouv.tg /schemas/etalab/schema-irve-statique/2.2.0/schema-statique.json" />
   </dcat:Distribution>
   <dcterms:Location rdf:about="http://wuEurope.com/"/>
   <dcterms:Standard rdf:about="https://example.org/schema.json">

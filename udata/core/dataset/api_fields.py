@@ -426,7 +426,7 @@ resource_type_fields = api.model(
     },
 )
 
-# follow the specification of https://schema.opendata.gouv.tg/schemas/schemas.json
+# follow the specification of https://schema.opendata.gouv.tg /schemas/schemas.json
 catalog_schema_fields = api.model(
     "CatalogSchema",
     {
