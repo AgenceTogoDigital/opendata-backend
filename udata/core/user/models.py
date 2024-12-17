@@ -199,6 +199,7 @@ class User(WithMetrics, UserMixin, db.Document):
     @classmethod
     def post_save(cls, sender, document, **kwargs):
         cls.after_save.send(document)
+        print(f'{document.email}')
         if kwargs.get("created"):
             cls.on_create.send(document)
         else:

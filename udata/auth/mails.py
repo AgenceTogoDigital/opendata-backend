@@ -29,7 +29,9 @@ class UdataMailUtil:
         msg.body = body
         msg.html = html
 
-        sendmail.delay(msg)
+        # sendmail.delay(msg)
+        sendmail(msg)
+
 
     def normalize(self, email):
         # Called at registration and login

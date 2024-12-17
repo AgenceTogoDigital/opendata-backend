@@ -68,7 +68,7 @@ class Defaults(object):
 
     # Flask mail settings
 
-    MAIL_DEFAULT_SENDER = "webmaster@udata"
+    MAIL_DEFAULT_SENDER = 'webmaster@udata'
 
     # Flask security settings
 
@@ -550,7 +550,7 @@ class Testing(object):
     # related to https://github.com/noirbizarre/flask-restplus/commit/93e412789f1ef8d1d2eab837f15535cf79bd144d#diff-68876137696247abc8c123622c73a11f  # noqa
     # this keeps our legacy tests from failing, we should probably fix the tests instead someday
     PROPAGATE_EXCEPTIONS = False
-    SEND_MAIL = False
+    SEND_MAIL = True
     WTF_CSRF_ENABLED = False
     AUTO_INDEX = False
     CELERY_TASK_ALWAYS_EAGER = True
@@ -579,7 +579,7 @@ class Testing(object):
 
 class Debug(Defaults):
     DEBUG = True
-    SEND_MAIL = False
+    SEND_MAIL = True
     DEBUG_TB_INTERCEPT_REDIRECTS = False
     DEBUG_TB_PANELS = (
         "flask_debugtoolbar.panels.versions.VersionDebugPanel",

@@ -172,6 +172,7 @@ def get_or_create_owner(data):
 
 
 def get_or_create_user(data):
+    print(f"{data} efebufebfue")
     return get_or_create(data, "user", User, UserFactory)
 
 
